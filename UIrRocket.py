@@ -187,7 +187,7 @@ class MainFrame(UITemplate.MainFrame):
     def onMenuItemAbout( self, event ):
         aboutInfo = wx.adv.AboutDialogInfo()
         aboutInfo.SetName("rRocket-Monitor-UI")
-        aboutInfo.SetIcon(wx.Icon(bitmaptools.resource_path("./fig/rRocket.ico"), desiredWidth=1))
+        aboutInfo.SetIcon(wx.Icon(bitmaptools.resource_path("./fig/rRocketMonitor.ico"), desiredWidth=1))
         aboutInfo.SetVersion(APP_VERSION_STRING)
         aboutInfo.SetDescription("Interface Gráfica para rRocket-Monitor")
         aboutInfo.SetCopyright("(C) 2024 - Universidade Tecnológica Federal do Paraná")

@@ -14,9 +14,7 @@ cmd='pyinstaller'
 
   """
 
-shutil.copytree('sim', 'dist/sim', dirs_exist_ok=True) 
-
-cmd='pyinstaller --clean --onefile --windowed --icon="./fig/rRocket.ico" --add-data "./fig/*.png;fig/" --add-data "./fig/*.ico;fig/" --name rRocketUI main.py'
+cmd='pyinstaller --clean --onefile --windowed --icon="./fig/rRocketMonitor.ico" --add-data "./fig/*.png;fig/" --add-data "./fig/*.ico;fig/" --name rRocketMonitorUI main.py'
 
 os.system(cmd)
 

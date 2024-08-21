@@ -32,7 +32,7 @@ if __name__ == '__main__':
   wxpserial.init()
   app = wx.App()
   mainFrame = UIrRocket.MainFrame(parent=None)
-  mainFrame.SetIcon(wx.Icon(bitmaptools.resource_path("./fig/rRocket.png")))
+  mainFrame.SetIcon(wx.Icon(bitmaptools.resource_path("./fig/rRocketMonitor.png")))
   mainFrame.Show()
   mainFrame.Maximize(True)
   app.MainLoop()

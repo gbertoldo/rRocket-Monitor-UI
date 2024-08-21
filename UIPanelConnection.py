@@ -33,7 +33,7 @@ class PanelConnection(UITemplate.PanelConnection):
     def __init__(self, parent):
         UITemplate.PanelConnection.__init__(self,parent)
         self.parent = parent
-        self.figLogo =bitmaptools.scale_bitmap(wx.Bitmap(  bitmaptools.resource_path(u"fig/rRocket.png"), wx.BITMAP_TYPE_ANY ), 200, 200)
+        self.figLogo =bitmaptools.scale_bitmap(wx.Bitmap(  bitmaptools.resource_path(u"fig/rRocketMonitor.png"), wx.BITMAP_TYPE_ANY ), 200, 200)
         self.figDisconnected = bitmaptools.scale_bitmap(wx.Bitmap( bitmaptools.resource_path(u"fig/disconnected.png"), wx.BITMAP_TYPE_ANY ), 25, 25)
         self.figConnected = bitmaptools.scale_bitmap(wx.Bitmap( bitmaptools.resource_path(u"fig/connected.png"), wx.BITMAP_TYPE_ANY ), 25, 25)
         self.figReload =bitmaptools.scale_bitmap(wx.Bitmap( bitmaptools.resource_path(u"fig/reload.png"), wx.BITMAP_TYPE_ANY ), 20, 20)
