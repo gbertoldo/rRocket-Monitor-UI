@@ -48,8 +48,21 @@ Abaixo do gráfico há três botões:
 - **Iniciar/Parar**: inicia/para o registro de dados enviados pelo rRocket-Monitor para a interface gráfica.
 - **Limpar**: limpa os registros de dados.
 - **Gerar relatório**: cria uma listagem dos dados registrados. É possível gravar a listagem em arquivo de texto para análise posterior.
+    
+## Análise
 
-## Teste
+A aba **Análise** permite comparar os dados do rRocket com aqueles obtidos pelo rRocket-Monitor. O gráfico apresentado nesta aba é semelhante ao da aba **Monitor**, exceto pelo fato que aqui são exibidos os dados do altímetro e do rRocket-Monitor.
+<p align="center">
+<img src="https://github.com/user-attachments/assets/97167212-8f0c-43a0-a38d-df028ecf2bbc">
+</p>
+
+Abaixo do gráfico há dois campos onde são informados os caminhos para os arquivos de texto com os dados do rRocket-Monitor e do rRocket. O primeiro arquivo é criado a partir do relatório gerado na aba [Monitor](#monitor). O segundo arquivo é gerado através da aba **Memória** no [rRocket-UI](https://github.com/gbertoldo/rRocket-UI).
+
+Como não há sincronização nas medições do rRocket e do rRocket-Monitor, espera-se defasagem nos gráficos dos dados dos desses dispositivos. Para corrigir essa defasagem, o campo (dt) permite deslocar os dados do rRocket-Monitor com relação ao tempo a fim de que as curvas de altura coincidam. Esse ajuste pode ser feito automaticamente através do botão **Autoajustar**.   
+
+No botão **Gerar relatório** é possível gerar uma listagem das informações da análise e gravar os dados em arquivo de texto para análise posterior.
+
+## Procedimento de teste do rRocket
 
 A figura abaixo apresenta dados coletados em um teste do rRocket.
 <p align="center">
@@ -74,21 +87,9 @@ Há alguns pontos a se destacar com relação aos dados coletados:
 1. Observa-se queda de tensão na bateria a cada tentativa de acionamento dos paraquedas. Baterias reais sofrem queda de tensão quando a demanda por corrente aumenta.
 1. O paraquedas auxiliar (drogue) foi acionado antes do apogeu. Isso não representa um problema, pois a curva da trajetória foi gerada pela movimentação do êmbolo e não representa a dinâmica de um voo real. O paraquedas auxiliar é acionado quando a componente vertical da velocidade é zero. Ao analizar os dados do rRocket, observa-se que tal velocidade é nula justamente no instante em que o drogue foi acionado. 
 1. O paraquedas auxiliar foi acionado na altura de 200 m, como esperado.
-    
-## Análise
 
-A aba **Análise** permite comparar os dados do rRocket com aqueles obtidos pelo rRocket-Monitor. O gráfico apresentado nesta aba é semelhante ao da aba **Monitor**, exceto pelo fato que aqui são exibidos os dados do altímetro e do rRocket-Monitor.
-<p align="center">
-<img src="https://github.com/user-attachments/assets/97167212-8f0c-43a0-a38d-df028ecf2bbc">
-</p>
 
-Abaixo do gráfico há dois campos onde são informados os caminhos para os arquivos de texto com os dados do rRocket-Monitor e do rRocket. O primeiro arquivo é criado a partir do relatório gerado na aba [Monitor](#monitor). O segundo arquivo é gerado através da aba **Memória** no [rRocket-UI](https://github.com/gbertoldo/rRocket-UI).
-
-Como não há sincronização nas medições do rRocket e do rRocket-Monitor, espera-se defasagem nos gráficos dos dados dos desses dispositivos. Para corrigir essa defasagem, o campo (dt) permite deslocar os dados do rRocket-Monitor com relação ao tempo a fim de que as curvas de altura coincidam. Esse ajuste pode ser feito automaticamente através do botão **Autoajuste**.   
-
-No botão **Gerar relatório** é possível gerar uma listagem das informações da análise e gravar os dados em arquivo para análise posterior.
-
-Na figura abaixo são exibidos os dados do rRocket e do rRocket-Monitor obtidos no teste mencionado [acima](#teste).
+Na figura abaixo são exibidos os dados do rRocket e do rRocket-Monitor obtidos no teste mencionado acima.
 <p align="center">
 <img src="https://github.com/user-attachments/assets/2af57494-e6f8-4d4d-97f3-5cab29c3d5a0">
 </p>
